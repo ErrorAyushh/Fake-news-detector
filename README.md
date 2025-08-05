@@ -1,42 +1,57 @@
-Fake News Detection using LSTM
-Overview
-This project aims to detect fake news using a Long Short-Term Memory (LSTM) neural network model. Fake news is a growing concern in today's digital age, and being able to automatically identify whether a news article is real or fake can help combat misinformation and promote reliable content online.
+📰 Fake News Detector 🔍
+A Deep Learning project to detect whether a news headline is real or fake using an LSTM-based model and a Streamlit web app.
 
-The model is trained on a labeled dataset of news articles and uses deep learning (LSTM) for accurate binary classification of text data.
+💡 About the Project
+With the rise of misinformation across digital platforms, the ability to automatically detect fake news has become increasingly important. This project uses an LSTM (Long Short-Term Memory) neural network model to classify news headlines as either real or fake.
 
+🚀 Features
+Built with TensorFlow/Keras and trained using an LSTM architecture.
 
-Features
-Preprocessing of news articles (cleaning, tokenization, padding)
+Simple and intuitive Streamlit interface for real-time predictions.
 
-Binary classification using LSTM neural network
+Preprocessed dataset with cleaned headlines.
 
-Streamlit UI for real-time fake news detection
+Supports live user input via a web UI.
 
-Model trained on a labeled dataset of real and fake news
+Includes a tokenizer to process new inputs consistently.
 
-Accuracy of over 97% on validation data
+🧠 Model Details
+Model: LSTM
 
-Dataset
-The dataset used is the Fake and Real News Dataset from Kaggle. It contains labeled data for fake and real news articles.
+Accuracy: ~96%
 
-You can download it from here.
+Input: News headline text
 
- Model Performance
-Training Accuracy: ~97.5%
-
-Validation Accuracy: ~97.3%
-
-Loss: Decreasing trend, minimal overfitting
-
-Model trained for 10 epochs with appropriate preprocessing and tokenizer saving for inference.
+Output: "Real" or "Fake"
 
 
 
-Future Improvements
-Incorporate headlines and full-body text for better accuracy.
+📊 Dataset Used
+Dataset: Fake and real news dataset - Kaggle
 
-Use transformers (BERT) for more advanced NLP.
+It contains:
 
-Add feedback and correction system to retrain model continuously.
+fake.csv: Headlines and text labeled as fake
 
-Deploy the app on the web using platforms like Streamlit Cloud or HuggingFace Spaces.
+true.csv: Headlines and text labeled as real
+
+
+📝 Requirements
+Python ≥ 3.8
+
+TensorFlow
+
+Keras
+
+Numpy
+
+Pandas
+
+Streamlit
+
+Pickle
+
+🤔 Limitations
+Predictions depend on the training dataset — newer news might not be evaluated correctly if they differ from training data trends.
+
+The model checks patterns in text only (no fact-checking against real-time sources).

@@ -52,6 +52,7 @@ Pickle
 
 
 🤔 Limitations
+
 Predictions depend on the training dataset — newer news might not be evaluated correctly if they differ from training data trends.
 
 The model checks patterns in text only (no fact-checking against real-time sources).

@@ -1,5 +1,7 @@
 📰 Fake News Detector using LSTM (Deep Learning)
 Detect fake news with high accuracy using an LSTM-based deep learning model built with TensorFlow/Keras and deployed using Streamlit.
+
+
 📌 Table of Contents
 About
 

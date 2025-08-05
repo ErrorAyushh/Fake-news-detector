@@ -18,12 +18,11 @@ Includes a tokenizer to process new inputs consistently.
 🧠 Model Details
 Model: LSTM
 
-Accuracy: ~96%
+Accuracy: ~97%
 
 Input: News headline text
 
 Output: "Real" or "Fake"
-
 
 
 📊 Dataset Used
@@ -51,7 +50,12 @@ Streamlit
 
 Pickle
 
+
 🤔 Limitations
 Predictions depend on the training dataset — newer news might not be evaluated correctly if they differ from training data trends.
 
 The model checks patterns in text only (no fact-checking against real-time sources).
+
+
+
+

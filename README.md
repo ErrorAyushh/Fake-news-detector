@@ -1,64 +1,42 @@
-📰 Fake News Detector using LSTM (Deep Learning)
-Detect fake news with high accuracy using an LSTM-based deep learning model built with TensorFlow/Keras and deployed using Streamlit.
+Fake News Detection using LSTM
+Overview
+This project aims to detect fake news using a Long Short-Term Memory (LSTM) neural network model. Fake news is a growing concern in today's digital age, and being able to automatically identify whether a news article is real or fake can help combat misinformation and promote reliable content online.
+
+The model is trained on a labeled dataset of news articles and uses deep learning (LSTM) for accurate binary classification of text data.
 
 
-📌 Table of Contents
-About
+Features
+Preprocessing of news articles (cleaning, tokenization, padding)
 
-Tech Stack
+Binary classification using LSTM neural network
 
-Model Accuracy
+Streamlit UI for real-time fake news detection
 
-How It Works
+Model trained on a labeled dataset of real and fake news
 
-Installation
+Accuracy of over 97% on validation data
 
-Usage
+Dataset
+The dataset used is the Fake and Real News Dataset from Kaggle. It contains labeled data for fake and real news articles.
 
-Project Structure
+You can download it from here.
 
-Screenshots
+ Model Performance
+Training Accuracy: ~97.5%
 
-Contributors
+Validation Accuracy: ~97.3%
 
-License
+Loss: Decreasing trend, minimal overfitting
 
- About
-Fake news spreads misinformation and causes real-world harm. This project uses LSTM (Long Short-Term Memory) neural networks to accurately classify whether a news article is Fake or Real based on its content. It includes:
+Model trained for 10 epochs with appropriate preprocessing and tokenizer saving for inference.
 
-A trained LSTM model with 97%+ accuracy
 
-Tokenizer saved and reused for consistent predictions
 
-Clean and simple UI built using Streamlit
+Future Improvements
+Incorporate headlines and full-body text for better accuracy.
 
-Ready to deploy on Streamlit Cloud or locally
+Use transformers (BERT) for more advanced NLP.
 
- Tech Stack
-Python 
+Add feedback and correction system to retrain model continuously.
 
-TensorFlow / Keras 
-
-Streamlit 
-
-Pandas & NumPy
-
-Sklearn
-
-Pickle (for tokenizer saving/loading)
-
-✅ Model Accuracy
-Metric	Value
-Training Accuracy	97.5%
-Validation Accuracy	97.3%
-Loss (Val)	0.0822
-
-Model was trained for 10 epochs using preprocessed news headlines and text content.
-
-🔍 How It Works
-The input news text is tokenized using a pre-trained tokenizer (news_tokenizer.pkl).
-
-The text is padded and passed into the LSTM model (lstm_fake_news_model.keras).
-
-The model outputs a prediction (Fake or Real) based on learned patterns.
-
+Deploy the app on the web using platforms like Streamlit Cloud or HuggingFace Spaces.
